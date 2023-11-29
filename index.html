@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Dachshund Love</title>
+    <link href="resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="resources/css/style.css" type="text/css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/images/fave icon.ico/favicon-16x16.png">
+  </head>
+  <body>
+    <div class="header">
+      <a href="#home"><img class="logo" src="resources/images/logo/dackel-logo-klein.png" alt="Company Logo" width="100%"></a>
+      <nav>
+        <ul>
+          <li><a href="#Stargazing-header">Stargazing</a></li>
+          <li><a href="#Beach-header">Beach</a></li>
+          <li><a href="#Reading-header">Reading</a></li>
+          <li><a href="#Pride-header">Pride</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="home">
+      <img class="background" src="resources/images/Stargazing/Stargazing1.jpg" alt="A Dachshund amidst stars, fairytale" title="Prompt:Firefly a happy brown dachshund in a tutu gazing at the stars and one of them is falling; magical sc">
+      <div class="banner">
+        <p><h1>A life without a Dachshund is possible but meaningless.</h1></p>
+        <p><h3>Some adorable Dachshund images created with <a href="https://firefly.adobe.com/inspire/images">Adobe Firefly</a> to brighten your day.</h3></p>
+      </div>
+    </div>
+    <div class="sectionHeader" id="Stargazing-header">
+      <!-- <p><h2>Stargazing</h2></p> -->‚
+      <p><q>"Stars, too, were time travelers. How many of those ancient points of light were the last echoes of suns now dead? How many had been born but their light not yet come this far? If all the suns but ours collapsed tonight, how many lifetimes would it take us to realize we were alone? I had always known the sky was full of mysteries—but not until now had I realized how full of them the earth was." </q> </br></br> - Ransom Riggs, Miss Peregrine's Home for Peculiar Children - </p>
+    </div>
+    <div class="section" id="Stargazing">
+      <ul>
+        <li><img src="resources/images/Stargazing/Stargazing2.jpg" alt="A Dachshund amidst stars, fairytale" title="Prompt:Firefly a happy brown dachshund in a tutu gazing at the stars and one of them is falling; magical sc"></li>        
+      </ul>
+    </div>
+    <div class="sectionHeader" id="Beach-header">
+     <!--  <p><h2>Beach</h2></p> -->
+      <p><q>Gib mir die Hand
+        </br>Ich bau dir ein Schloss aus Sand
+        </br>Irgendwie, irgendwo, irgendwann</q></br></br> - Nena - </p>
+    </div>
+    <div class="slideshow-container" id="Beach">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="resources/images/Beach/Beach2.jpg">        
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="resources/images/Beach/Beach1.jpg">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="resources/images/Beach/Beach3.jpg">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    </br>      
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+        
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+        
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+        
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+
+    </script>
+    <div class="sectionHeader" id="Reading-header">
+      <!-- <p><h2>Reading</h2></p> -->
+      <p><q>"But Grandmother! What big eyes you have!" </q></p>
+    </div>
+    <div class="section" id="Reading">
+      <ul>
+        <li><img src="resources/images/Reading/Cozy-Reading1.jpg" alt="A Dachshund reading in front of a fireplace"></li>
+        <li><img src="resources/images/Reading/Cozy-Reading2.jpg" alt="A Dachshund reading in front of a fireplace"></li>
+        <li><img src="resources/images/Reading/Computer-Reading.jpg" alt="A Dachshund reading from a laptop in a coffeeshop"></li>          
+      </ul>
+    </div>
+    <div class="sectionHeader" id="Pride-header">
+      <!-- <p><h2>Pride</h2></p> -->
+      <p><h1>Love is love is love.</h1></p>
+    </div>
+    <div class="section" id="Pride">
+      <ul>
+        <li><img src="resources/images/Pride/Pride1.jpg" alt="Dachshund with Rainbow Colors"></li>
+        <li><img src="resources/images/Pride/Pride3.jpg" alt="Dachshund with Rainbow Colors"></li>
+        <li><img src="resources/images/Pride/Pride4.jpg" alt="Dachshund with Rainbow Colors"></li>
+        <li><img src="resources/images/Pride/Pride5.jpg" alt="Dachshund with Rainbow Colors"></li>          
+      </ul>
+    </div>
+  <div class="sectionFooter">
+    <h3>I hope this made your day.</h3>
+  </br>If not: start again.
+    </br>Or create your own masterpieces with <a href="https://firefly.adobe.com/inspire/images">Adobe Firefly</a>
+  </div>
+  <footer>
+    Made by Bea with love as a fun learning project.
+  </br> Find me on <a href="https://www.linkedin.com/in/bea-krug/"><i class="fa fa-linkedin"></i></a>
+  </footer>
+  </body>
+</html>
+

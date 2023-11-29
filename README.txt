@@ -1,0 +1,1 @@
+This is the first Website I have attempted to create from scratch. As I love Dachshunds it is all about cute Dachshund images generated with Firefly. No Dog was forced to wear a costume during the generative production of these images. I hope you enjoy these as much as I do.
